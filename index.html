@@ -23,7 +23,7 @@
     // Initialize Supabase
     const supabaseUrl = 'https://duzwecymsheosedmfksz.supabase.co'; // Your project URL
     const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR1endlY3ltc2hlb3NlZG1ma3N6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MjgyNjQsImV4cCI6MjA4NjQwNDI2NH0.GM0Q5-uRPAmij0I_8NLQUBrqY7jM_JCNFFX06w_b5UQ'; // Your anon key
-    const supabase = Supabase.createClient(supabaseUrl, supabaseKey);
+    const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
 
     const form = document.getElementById('memberForm');
     const debugOutput = document.getElementById('debugOutput');
@@ -72,4 +72,5 @@
     });
   </script>
 </body>
+
 </html>
